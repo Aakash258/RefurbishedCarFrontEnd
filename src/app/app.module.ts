@@ -10,6 +10,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { CarDetailsComponent } from './car-details/car-details.component';
 import { CarsComponent } from './cars/cars.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SloginComponent } from './slogin/slogin.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddcarComponent } from './addcar/addcar.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +24,15 @@ import { CarsComponent } from './cars/cars.component';
     ContactUsComponent,
     AboutUsComponent,
     CarDetailsComponent,
-    CarsComponent
+    CarsComponent,
+    SloginComponent,
+    AddcarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
